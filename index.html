@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>PI IV - Extração e Visualização de Dados</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top" style="overflow: scroll">
+
+<script src="./core.js"></script>
+<script src="./charts.js"></script>
+<script src="./themes/animated.js"></script>
+<script src="./themes/dark.js"></script>
+
+<!--  MENU   -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <a class="navbar-brand logo-text page-scroll" href="index.html">PI IV</a>
+
+    <!-- MENU PRO CELULAR -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link page-scroll" href="#home">Página Inicial</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#intro">Introdução</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#graph">Gráficos</a></li>
+            <li class="nav-item"><a class="nav-link page-scroll" href="#team">Grupo</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HEADER - PAGINA INICIAL -->
+<header id="home" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1 class="turquoise"><span
+                                style="color: black !important; align-items: center">PI IV</span><br> Extração e
+                            Visualização de Dados</h1>
+                        <p class="p-large">Projeto integrador IV com a finalidade de extração de dados e
+                            visualização. </p>
+                        <a class="btn-solid-lg page-scroll" href="#graph">Ver gráficos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/header-teamwork.svg" alt="alternative">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Introdução -->
+<div id="intro" class="cards-1">
+    <!-- Card -->
+    <div class="card">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Introdução</h2>
+                    <p class="p-heading p-large">Nós do grupo optamos por utilizar uma base de dados relacionadas a
+                        filmes</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <img class="card-image" src="images/video.svg" alt="alternative">
+                </div>
+                <div class="col-lg-9">
+                    <div class="card-body">
+                        <h4 class="card-title">Porque filmes?</h4>
+                        <p>Com o passar dos anos os filmes foram evoluindo, tanto com efeitos especiais quanto em
+                            vendas, e vamos analisar isso para trazer dados consistntes de avaliação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- GRAFICOS -->
+<div id="graph" class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Gêneros mais famosos</h2>
+            </div>
+                <div id="chartdiv-1"></div>
+                <script src="./core.js"></script>
+                <script src="./charts.js"></script>
+                <script src="./plugins/wordCloud.js"></script>
+                <script src="./themes/animated.js"></script>
+                <script src="./js/index.js"></script>
+        </div>
+    </div>
+    <div class="form-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 style="color: white" >Budget X Revenue</h2>
+                </div>
+                <div id="chartdiv-2"></div>
+                <script src="./themes/animated.js"></script>
+                <script src="./js/indexSecondGraph.js"></script>
+
+            </div>
+        </div>
+    </div>
+	<div class="form-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Popularity x Revenue</h2>
+            </div>
+                <div id="chartdiv-3"></div>
+				<script src="./themes/animated.js"></script>
+				<script src="./js/indexPopularityGraph.js"></script>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- TIME -->
+<div id="team" class="basic-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Time</h2>
+                <p class="p-heading p-large">Alunos de BCC do 4º Semestre que compõem esse time sensacional!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <img class="img-fluid" src="images/team-member-1.svg" alt="alternative">
+                    </div>
+                    <p class="p-large"><strong>Ana Thayna</strong></p>
+                    <p class="job-title">Desenvolvedora</p>
+                    <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x "></i>
+                                    <i class="fab fa-linkedin -f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <img class="img-fluid" src="images/team-member-3.svg" alt="alternative">
+                    </div>
+                    <p class="p-large"><strong>Beatriz Paiva</strong></p>
+                    <p class="job-title">Desenvolvedora</p>
+                    <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x "></i>
+                                    <i class="fab fa-linkedin -f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <img class="img-fluid" src="images/team-member-2.svg" alt="alternative">
+                    </div>
+                    <p class="p-large"><strong>Lucas Breur</strong></p>
+                    <p class="job-title">Desenvolvedor</p>
+                    <span class="social-icons">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x "></i>
+                                    <i class="fab fa-linkedin -f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="margin: 0">
+                <div class="footer-col" >
+                    <h3>Projeto Integrador IV</h3>
+                    <p style="color: white; font-size: 18px; margin-top: 18px">Alunos Bacharelado de Ciência da computação do 4º Semestre.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+
+
+</body>
+</html>
