@@ -9,7 +9,6 @@ let chart2 = am4core.create("chartdiv-2", am4charts.XYChart);
 chart2.exporting.menu = new am4core.ExportMenu();
 // let chart2 = am4core.create("chartdiv-2", am4charts.XYChart);
 
-console.log(chart2);
 //Adddata
 
 chart2.data=[{"title":"Avatar","budget":237000000,"revenue":2787965087},
