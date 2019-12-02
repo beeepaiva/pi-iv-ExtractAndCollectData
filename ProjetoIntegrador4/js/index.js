@@ -34,11 +34,11 @@ series.data=[
 "weight":696
 },
 {
-"tag":"Thriller",
+"tag":"Drama",
 "weight":2297
 },
 {
-"tag":"Fantasy",
+"tag":"Thriller",
 "weight":1274
 },
 {
