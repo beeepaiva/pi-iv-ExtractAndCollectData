@@ -8,10 +8,12 @@ var chart3 = am4core.create("chartdiv-3", am4charts.XYChart);
 var valueAxisX = chart3.xAxes.push(new am4charts.ValueAxis());
 valueAxisX.renderer.ticks.template.disabled = true;
 valueAxisX.renderer.axisFills.template.disabled = true;
+valueAxisX.title.text = "Quantidade de filmes";
 
 var valueAxisY = chart3.yAxes.push(new am4charts.ValueAxis());
 valueAxisY.renderer.ticks.template.disabled = true;
 valueAxisY.renderer.axisFills.template.disabled = true;
+valueAxisY.title.text = "Revenue";
 
 var series = chart3.series.push(new am4charts.LineSeries());
 series.dataFields.valueX = "x";
