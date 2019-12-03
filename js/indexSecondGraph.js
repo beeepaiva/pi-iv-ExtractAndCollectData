@@ -7,7 +7,6 @@ let chart2 = am4core.create("chartdiv-2", am4charts.XYChart);
 
 // Export
 chart2.exporting.menu = new am4core.ExportMenu();
-// let chart2 = am4core.create("chartdiv-2", am4charts.XYChart);
 
 //Adddata
 
@@ -3045,12 +3044,14 @@ chart2.data=[{"title":"Avatar","budget":237000000,"revenue":2787965087},
 ];
 
 /* Create axes */
+// Create axes
 let categoryAxis = chart2.xAxes.push(new am4charts.CategoryAxis());
 categoryAxis.dataFields.category = "title";
+categoryAxis.title.text = "Títulos";
 categoryAxis.renderer.minGridDistance = 50;
 
-/* Create value axis */
 let valueAxis = chart2.yAxes.push(new am4charts.ValueAxis());
+valueAxis.title.text = "Valor";
 
 /* Create series */
 let columnSeries = chart2.series.push(new am4charts.ColumnSeries());
@@ -3064,6 +3065,8 @@ columnSeries.columns.template.propertyFields.stroke = "stroke";
 columnSeries.columns.template.propertyFields.strokeWidth = "strokeWidth";
 columnSeries.columns.template.propertyFields.strokeDasharray = "columnDash";
 columnSeries.tooltip.label.textAlign = "middle";
+
+columnSeries.stacked = true;
 
 let lineSeries = chart2.series.push(new am4charts.LineSeries());
 lineSeries.name = "Revenue";
@@ -3085,3 +3088,4 @@ circle.strokeWidth = 3;
 
 chart2.scrollbarX = new am4core.Scrollbar();
 chart2.scrollbarY = new am4core.Scrollbar();
+chart2.legend = new am4charts.Legend();
