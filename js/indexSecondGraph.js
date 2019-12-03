@@ -8,8 +8,8 @@ let chart2 = am4core.create("chartdiv-2", am4charts.XYChart);
 // Export
 chart2.exporting.menu = new am4core.ExportMenu();
 
-// chart2.data =
-let data=[{"title":"Avatar","budget":237000000,"revenue":2787965087},
+//Adddata
+chart2.data=[{"title":"Avatar","budget":237000000,"revenue":2787965087},
     {"title":"Pirates of the Caribbean: At World's End","budget":300000000,"revenue":961000000},
     {"title":"Spectre","budget":245000000,"revenue":880674609},
     {"title":"The Dark Knight Rises","budget":250000000,"revenue":1084939099},
@@ -3043,8 +3043,8 @@ let data=[{"title":"Avatar","budget":237000000,"revenue":2787965087},
 ];
 
 var titles = [];
-for(i=0;i<data.length;i++) {
-    titles[i] = data[i].title;
+for(i=0;i<chart2.data.length;i++) {
+    titles[i] = chart2.data[i].title;
 }
 
 /* Create axes */
